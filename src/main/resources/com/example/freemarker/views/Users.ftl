@@ -1,13 +1,12 @@
 <#-- @ftlvariable name="" type="com.example.free.UsersView" -->
-<html>
-<body>
+<#import "Layout.ftl" as layout>
+<@layout.layout>
 <h1>Users</h1>
 <div>
     <ul>
-    <#list users as user>
-        <li>${user.username}</li>
-    </#list>
+        <#list users as user>
+            <li>${user.username}</li>
+        </#list>
     </ul>
 </div>
-</body>
-</html>
+</@layout.layout>
