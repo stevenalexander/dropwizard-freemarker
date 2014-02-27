@@ -1,6 +1,6 @@
 import AssemblyKeys._
 
-name:="dropwizard-mustache"
+name:="dropwizard-freemarker"
 
 version:="0.1"
 

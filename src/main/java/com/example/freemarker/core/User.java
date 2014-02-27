@@ -1,4 +1,4 @@
-package com.example.mustache.core;
+package com.example.freemarker.core;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

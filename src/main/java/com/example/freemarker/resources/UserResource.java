@@ -1,7 +1,7 @@
-package com.example.mustache.resources;
+package com.example.freemarker.resources;
 
-import com.example.mustache.core.User;
-import com.example.mustache.views.UsersView;
+import com.example.freemarker.core.User;
+import com.example.freemarker.views.UsersView;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
