@@ -2,6 +2,7 @@ build
 target
 .idea
 .idea_modules
+.gradle
 logs
 libraries
 .DS_Store

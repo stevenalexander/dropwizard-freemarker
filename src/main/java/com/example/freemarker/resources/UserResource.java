@@ -5,7 +5,7 @@ import com.example.freemarker.views.UsersView;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.List;
 
 @Path("/")
@@ -19,19 +19,9 @@ public class UserResource {
     @GET
     @Path("user")
     public UsersView fetch(){
-        List<User> users = new LinkedList<>();
-        users.add(
-            new User()
-                .setUsername("user1")
-                .setDisplayName("User 1")
-                .setDisplayRole("Admin")
-        );
-        users.add(
-                new User()
-                        .setUsername("user2")
-                        .setDisplayName("User 2")
-                        .setDisplayRole("DBA")
-        );
+        List<User> users = Arrays.asList(
+                new User("user1", "pass1", "User 1", "Admin"),
+                new User("user2", "pass2", "User 2", "DBA"));
 
         return new UsersView(users);
     }

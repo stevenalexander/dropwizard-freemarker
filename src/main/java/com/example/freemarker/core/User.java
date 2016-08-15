@@ -16,39 +16,30 @@ public class User {
     @JsonProperty
     private String displayRole;
 
-    public String getUsername() {
-        return username;
+    public User() {
+        // Jackson deserialization
     }
 
-    public User setUsername(String username) {
+    public User(String username, String password, String displayName, String displayRole) {
         this.username = username;
-        return this;
+        this.password = password;
+        this.displayName = displayName;
+        this.displayRole = displayRole;
+    }
+
+    public String getUsername() {
+        return username;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public User setPassword(String password) {
-        this.password = password;
-        return this;
-    }
-
     public String getDisplayName() {
         return displayName;
     }
 
-    public User setDisplayName(String displayName) {
-        this.displayName = displayName;
-        return this;
-    }
-
     public String getDisplayRole() {
         return displayRole;
-    }
-
-    public User setDisplayRole(String displayRole) {
-        this.displayRole = displayRole;
-        return this;
     }
 }
