@@ -1,7 +1,7 @@
 package com.example.freemarker.views;
 
 import com.example.freemarker.core.User;
-import com.yammer.dropwizard.views.View;
+import io.dropwizard.views.View;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.example.freemarker;
 
-import com.yammer.dropwizard.config.Configuration;
+import io.dropwizard.Configuration;
 
 public class FreemarkerConfiguration extends Configuration {
 }
